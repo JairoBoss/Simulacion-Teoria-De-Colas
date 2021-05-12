@@ -74,7 +74,7 @@ public final class Camion {
     }
 
     public void setTiempoDeServicio() {
-        this.tiempoDeServicio = -Math.log(1 - Math.random()) / this.tiempoDeServicioMin * 60;
+        this.tiempoDeServicio = -Math.log(1 - Math.random()) / this.tiempoDeServicioMin * 60; //tasa de servicio
     }
 
     public void setTiempoDeTerminacionServicio() {

@@ -5,17 +5,21 @@
  */
 package main;
 
+import controller.Conexion;
 import controller.Sistema;
 import gui.MainFrame;
+import java.sql.SQLException;
 
 /**
  *
  * @author megabit
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         //Sistema sist = new Sistema(20, 30);
 //        sist.inicializar();
         new MainFrame();
+        Conexion a = new Conexion();
+        a.mostrarElementos();
     }
 }

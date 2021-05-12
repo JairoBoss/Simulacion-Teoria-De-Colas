@@ -4,8 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/megabit/NetBeansProjects/SimulacionTeoriaDeColas/src/model/Camion.java</file>
-            <file>file:/home/megabit/NetBeansProjects/SimulacionTeoriaDeColas/src/model/Main.java</file>
-            <file>file:/home/megabit/NetBeansProjects/SimulacionTeoriaDeColas/src/model/Sistema.java</file>
+            <file>file:/home/megabit/NetBeansProjects/SimulacionTeoriaDeColas/src/controller/Conexion.java</file>
+            <file>file:/home/megabit/NetBeansProjects/SimulacionTeoriaDeColas/src/controller/Sistema.java</file>
+            <file>file:/home/megabit/NetBeansProjects/SimulacionTeoriaDeColas/src/main/Main.java</file>
+            <file>file:/home/megabit/NetBeansProjects/SimulacionTeoriaDeColas/src/gui/Menu.java</file>
         </group>
     </open-files>
 </project-private>
