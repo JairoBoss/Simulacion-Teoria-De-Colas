@@ -29,14 +29,27 @@ public class MainFrame extends JFrame {
         super.setLayout(new BorderLayout());
         super.setLocationRelativeTo(null);
 
-        control = new Sistema(20, 30);
         menu = new Menu();
-        
-        datos = new DatosTableModel(control);
-        tblDatos = new JTable(datos);
-        
-        
-        super.add(new JScrollPane(tblDatos), BorderLayout.CENTER);
+        menu.setListener(new MenuListener() {
+            @Override
+            public void cancelar() {
+                System.exit(0);
+            }
+
+            @Override
+            public void aceptar(Integer x, Integer y) {
+                control = new Sistema(x, y);
+                datos = new DatosTableModel(control);
+                tblDatos = new JTable(datos);
+                datos.fireTableDataChanged();
+
+                MainFrame.this.setSize(1201, 301);
+
+                MainFrame.this.add(new JScrollPane(tblDatos), BorderLayout.CENTER);
+
+            }
+        });
+
         super.add(menu, BorderLayout.NORTH);
         super.setVisible(true);
     }

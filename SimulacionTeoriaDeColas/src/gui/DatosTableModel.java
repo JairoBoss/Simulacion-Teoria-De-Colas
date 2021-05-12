@@ -63,4 +63,32 @@ public class DatosTableModel extends AbstractTableModel {
         }
     }
 
+    @Override
+    public String getColumnName(int column) {
+        switch (column) {
+            case 0:
+                return "No camion";
+            case 1:
+                return "No aleatorio";
+            case 2:
+                return "Tiempo entre llegada";
+            case 3:
+                return "Tiempo de llegada";
+            case 4:
+                return "Tiempo de inicio servicio";
+            case 5:
+                return "Tiempo de espera";
+            case 6:
+                return "Tiempo de servicio";
+            case 7:
+                return "Tiempo de finalizacion de servicio";
+            case 8:
+                return "Tiempo en el sistema";
+            case 9:
+                return "Tiempo de ocio";
+            default:
+                throw new AssertionError();
+        }
+    }
+
 }
