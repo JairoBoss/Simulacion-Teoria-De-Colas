@@ -28,6 +28,7 @@ public class Sistema {
         this.camiones = new ArrayList<>();
         noPersonasXMinuto = 60 / this.tazaDeLlegada;
         tiempoPromedioDeOfrecerServicio = 60 / this.tazaDeServicio;
+        inicializar();
     }
     
     public void inicializar(){
@@ -42,6 +43,14 @@ public class Sistema {
     }
     
     
+    public Integer tamaño(){
+        return camiones.size();
+    }
+    
+    public Camion getCamion(int x){
+        return camiones.get(x);
+        
+    }
     
 
     

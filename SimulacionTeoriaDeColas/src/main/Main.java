@@ -14,7 +14,7 @@ import gui.MainFrame;
  */
 public class Main {
     public static void main(String[] args) {
-        Sistema sist = new Sistema(20, 30);
+        //Sistema sist = new Sistema(20, 30);
 //        sist.inicializar();
         new MainFrame();
     }
